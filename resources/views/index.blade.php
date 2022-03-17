@@ -3,6 +3,8 @@
     <main id="main">
 
 
+
+
         <!-- ======= Clients Section ======= -->
         <section id="clients" class="clients section-bg">
             <div class="container">
@@ -37,6 +39,41 @@
 
             </div>
         </section><!-- End Cliens Section -->
+
+
+        <!-- ======= Pegawai ======= -->
+        <section id="pegawai" class="portfolio">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Pegawai</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="container" data-aos="fade-up">
+                    <table class="table table-striped">
+                        <thead>
+                            <th>Nama</th>
+                            <th>NIP</th>
+                            <th>NoHP</th>
+                            <th>Alamat</th>
+                        </thead>
+                        <tbody>
+                            @foreach ($peg as $p)
+                                <tr>
+                                    <td>{{ $p->nama }}</td>
+                                    <td>{{ $p->nip }}</td>
+                                    <td>{{ $p->noHp }}</td>
+                                    <td>{{ $p->alamat }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section><!-- End Pegawai Section -->
+
 
         <!-- ======= About Us Section ======= -->
         <section id="about" class="about">
@@ -313,38 +350,7 @@
 
 
 
-        <!-- ======= Pegawai ======= -->
-        <section id="pegawai" class="portfolio">
-            <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Pegawai</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-                <div class="container" data-aos="fade-up">
-                    <table class="table table-striped">
-                        <thead>
-                            <th>Nama</th>
-                            <th>NIP</th>
-                            <th>NoHP</th>
-                            <th>Alamat</th>
-                        </thead>
-                        <tbody>
-                            @foreach ($peg as $p)
-                                <tr>
-                                    <td>{{ $p->nama }}</td>
-                                    <td>{{ $p->nip }}</td>
-                                    <td>{{ $p->noHp }}</td>
-                                    <td>{{ $p->alamat }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section><!-- End Pegawai Section -->
 
         <!-- ======= Team Section ======= -->
         <section id="team" class="team section-bg">
