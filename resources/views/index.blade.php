@@ -349,7 +349,38 @@
         </section><!-- End Portfolio Section -->
 
 
+        <!-- ======= Supplier ======= -->
+        <section id="supplier" class="portfolio">
+            <div class="container" data-aos="fade-up">
 
+                <div class="section-title">
+                    <h2>Pegawai</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="container" data-aos="fade-up">
+                    <table class="table table-striped">
+                        <thead>
+                            <th>Id Perusahaan</th>
+                            <th>Nama Perusahaan</th>
+                            <th>Nomor Telephone Perusahaan</th>
+                            <th>Nama Barang</th>
+                        </thead>
+                        <tbody>
+                            @foreach ($sup as $s)
+                                <tr>
+                                    <td>{{ $s->id }}</td>
+                                    <td>{{ $s->namaPerusahaan }}</td>
+                                    <td>{{ $s->NoTelpPerusahaan }}</td>
+                                    <td>{{ $s->namaBarang }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section><!-- End Supplier Section -->
 
 
         <!-- ======= Team Section ======= -->
@@ -367,7 +398,8 @@
 
                     <div class="col-lg-6">
                         <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid"
+                                    alt="">
                             </div>
                             <div class="member-info">
                                 <h4>Walter White</h4>
