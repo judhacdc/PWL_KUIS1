@@ -20,6 +20,11 @@ class CreatePegawaisTable extends Migration
             $table->string('noHp', 255)->index();
             $table->string('alamat', 255)->index();
             $table->timestamps();
+            
+             /**
+     * memberikan indexing pada kolom
+
+     */
         });
     }
 
